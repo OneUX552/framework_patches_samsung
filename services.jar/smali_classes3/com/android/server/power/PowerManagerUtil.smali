@@ -335,7 +335,7 @@
     :goto_7
     sput-boolean v11, Lcom/android/server/power/PowerManagerUtil;->EUREKA_PROJECT:Z
 
-    const-string v12, "5"
+    const-string v12, "4"
 
     invoke-static {v12}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
 
