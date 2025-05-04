@@ -321,7 +321,7 @@
     move v0, v3
 
     :goto_9
-    const-string v8, "5"
+    const-string v8, "4"
 
     invoke-static {v8}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
 
