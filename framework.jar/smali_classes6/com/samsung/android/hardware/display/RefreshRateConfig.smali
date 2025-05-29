@@ -451,7 +451,7 @@
 
     move-result-object v0
 
-    const-string v1, "3"
+    const-string v1, "2"
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -737,7 +737,7 @@
 
     invoke-direct {v0, v3, v4, v1, v2}, Lcom/samsung/android/hardware/display/RefreshRateConfig$BrightnessThreshold;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    const-string v1, "3"
+    const-string v1, "2"
 
     const-string v2, "60,48,96,120"
 
