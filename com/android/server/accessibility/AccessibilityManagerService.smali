@@ -6745,7 +6745,7 @@
 
     invoke-virtual/range {v9 .. v14}, Landroid/content/Context;->registerReceiverAsUser(Landroid/content/BroadcastReceiver;Landroid/os/UserHandle;Landroid/content/IntentFilter;Ljava/lang/String;Landroid/os/Handler;)Landroid/content/Intent;
 
-    const-string/jumbo v7, "android.safetycenter.action.SAFETY_CENTER_ENABLED_CHANGED"
+    const-string v7, "android.safetycenter.action.SAFETY_CENTER_ENABLED_CHANGED"
 
     invoke-static {v7}, Lcom/android/server/BatteryService$$ExternalSyntheticOutline0;->m(Ljava/lang/String;)Landroid/content/IntentFilter;
 
@@ -7511,8 +7511,6 @@
     monitor-exit v7
 
     throw v0
-
-    nop
 
     :array_0
     .array-data 8
@@ -19693,7 +19691,7 @@
 
     new-instance p1, Landroid/content/Intent;
 
-    const-string/jumbo p2, "android.settings.SHOW_ADMIN_SUPPORT_DETAILS"
+    const-string p2, "android.settings.SHOW_ADMIN_SUPPORT_DETAILS"
 
     invoke-direct {p1, p2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
@@ -19831,7 +19829,7 @@
 
     new-instance p3, Landroid/content/Intent;
 
-    const-string/jumbo v0, "android.settings.SHOW_RESTRICTED_SETTING_DIALOG"
+    const-string v0, "android.settings.SHOW_RESTRICTED_SETTING_DIALOG"
 
     invoke-direct {p3, v0}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
