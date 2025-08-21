@@ -1,7 +1,6 @@
 .class public final Lcom/samsung/android/knox/custom/KnoxCustomManagerService;
 .super Lcom/samsung/android/knox/custom/IKnoxCustomManager$Stub;
 .source "qb/97330867 27cc687e617a2c5e9df4110e7e3be191ff1d2a0c1fcb6b1e5e0352b887c9e97d"
-
 # interfaces
 .implements Lcom/android/server/enterprise/EnterpriseServiceCallback;
 
