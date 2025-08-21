@@ -198,7 +198,7 @@
 
 .field public static final blacklist FW_DISABLE_SPLASH_SCREEN:Z = true
 
-.field public static final blacklist FW_DISABLE_SUPER_HDR:Z = true
+.field public static final blacklist FW_DISABLE_SUPER_HDR:Z = false
 
 .field public static final blacklist FW_DISPLAY_CUTOUT_BG:Z = true
 
@@ -712,7 +712,7 @@
 
 .field public static final blacklist FW_SUPPORT_API_QUERY_REGISTERED_RECEIVER_PACKAGES:Z = true
 
-.field public static final blacklist FW_SUPPORT_APPLOCK:Z
+.field public static final blacklist FW_SUPPORT_APPLOCK:Z =true
 
 .field public static final blacklist FW_SUPPORT_COMPANION_DEVICE_BATTERY_INFO:Z = true
 
@@ -3372,6 +3372,8 @@
     invoke-virtual {v0, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
+
+    const/4 v1, 0x1
 
     sput-boolean v0, Lcom/samsung/android/rune/CoreRune;->FW_SUPPORT_APPLOCK:Z
 
