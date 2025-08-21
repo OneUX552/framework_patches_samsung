@@ -2,7 +2,6 @@
 .super Ljava/lang/Object;
 .source "qb/97330867 27cc687e617a2c5e9df4110e7e3be191ff1d2a0c1fcb6b1e5e0352b887c9e97d"
 
-
 # instance fields
 .field public final ACL_CONTROL_GALLERY_APP_LIST:[Ljava/lang/String;
 
@@ -2082,7 +2081,7 @@
     invoke-static {v4, v1, v7}, Lcom/android/server/SystemServiceManager$$ExternalSyntheticOutline0;->m(Ljava/lang/StringBuilder;ILjava/lang/String;)V
 
     :cond_4
-    const-string/jumbo v1, "mEnvironmentAdaptiveDisplaySupported false , mGlareReductionSupported : false"
+    const-string/jumbo v1, "mEnvironmentAdaptiveDisplaySupported true , mGlareReductionSupported : false"
 
     invoke-static {v7, v1}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
 
