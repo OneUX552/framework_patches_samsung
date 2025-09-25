@@ -18227,21 +18227,9 @@
     .line 4197
     invoke-virtual/range {p1 .. p1}, Landroid/util/TimingsTraceLog;->traceEnd()V
 
-    .line 4198
-    .line 4199
-    .line 4200
-    invoke-static {}, Landroid/os/FactoryTest;->isFactoryBinary()Z
+    goto :cond_3c
 
-    .line 4201
-    .line 4202
-    .line 4203
-    move-result v3
 
-    .line 4204
-    if-nez v3, :cond_3c
-
-    .line 4205
-    .line 4206
     const-string v3, "StartKnoxGuard"
 
     .line 4207
