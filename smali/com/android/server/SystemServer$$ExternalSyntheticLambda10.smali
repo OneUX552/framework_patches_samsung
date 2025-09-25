@@ -71,106 +71,10 @@
     move-result-object v2
 
     .line 17
-    const-string v3, "SemService"
-
-    .line 18
-    .line 19
-    invoke-virtual {v2, v3}, Lcom/android/server/utils/TimingsTraceAndSlog;->traceBegin(Ljava/lang/String;)V
-
-    .line 20
-    .line 21
-    .line 22
-    :try_start_0
-    const-class v4, Lcom/android/server/SemService;
-
-    .line 23
-    .line 24
-    invoke-static {v3, v4}, Landroid/os/ServiceManager;->addService(Ljava/lang/String;Ljava/lang/Class;)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 25
-    .line 26
-    .line 27
-    goto :goto_0
-
-    .line 28
-    :catchall_0
-    move-exception v3
-
-    .line 29
-    const-string v4, "Failure starting SemService"
-
-    .line 30
-    .line 31
-    invoke-static {v4, v3}, Lcom/android/server/SystemServer;->reportWtf(Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    .line 32
-    .line 33
-    .line 34
-    :goto_0
-    invoke-virtual {v2}, Landroid/util/TimingsTraceLog;->traceEnd()V
 
     .line 35
     .line 36
     .line 37
-    const-string v3, "Blockchain Service"
-
-    .line 38
-    .line 39
-    invoke-virtual {v2, v3}, Lcom/android/server/utils/TimingsTraceAndSlog;->traceBegin(Ljava/lang/String;)V
-
-    .line 40
-    .line 41
-    .line 42
-    :try_start_1
-    invoke-static {v1, v3}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 43
-    .line 44
-    .line 45
-    const-string/jumbo v3, "blockchain"
-
-    .line 46
-    .line 47
-    .line 48
-    new-instance v4, Lcom/android/server/SystemServer$4;
-
-    .line 49
-    .line 50
-    const/4 v5, 0x4
-
-    .line 51
-    invoke-direct {v4, v5}, Lcom/android/server/SystemServer$4;-><init>(I)V
-
-    .line 52
-    .line 53
-    .line 54
-    invoke-static {v3, v4}, Landroid/os/ServiceManager;->addService(Ljava/lang/String;Landroid/os/IServiceCreator;)V
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_1
-
-    .line 55
-    .line 56
-    .line 57
-    goto :goto_1
-
-    .line 58
-    :catchall_1
-    move-exception v3
-
-    .line 59
-    const-string v4, "Failure starting Blockchain TZ Service"
-
-    .line 60
-    .line 61
-    invoke-static {v1, v4, v3}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
-
-    .line 62
-    .line 63
-    .line 64
-    :goto_1
-    invoke-virtual {v2}, Landroid/util/TimingsTraceLog;->traceEnd()V
 
     .line 65
     .line 66
