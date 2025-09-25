@@ -4215,26 +4215,7 @@
     .line 508
     .line 509
     .line 510
-    new-instance p1, Lcom/android/server/enterprise/hdm/HdmService;
-
-    .line 511
-    .line 512
-    iget-object v0, v0, Lcom/android/server/enterprise/EnterpriseDeviceManagerServiceImpl$Injector;->mContext:Landroid/content/Context;
-
-    .line 513
-    .line 514
-    invoke-direct {p1, v0}, Lcom/android/server/enterprise/hdm/HdmService;-><init>(Landroid/content/Context;)V
-
-    .line 515
-    .line 516
-    .line 517
-    const-string/jumbo v0, "hdm_service"
-
-    .line 518
-    .line 519
-    .line 520
-    invoke-static {p1, v0}, Lcom/android/server/enterprise/EnterpriseDeviceManagerServiceImpl$Injector;->addLazySystemService(Lcom/android/server/enterprise/EnterpriseServiceCallback;Ljava/lang/String;)V
-
+  
     .line 521
     .line 522
     .line 523
