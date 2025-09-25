@@ -327,64 +327,7 @@
     .line 138
     .line 139
     :cond_0
-    const-string p0, "MPOS Service"
-
-    .line 140
-    .line 141
-    invoke-virtual {v2, p0}, Lcom/android/server/utils/TimingsTraceAndSlog;->traceBegin(Ljava/lang/String;)V
-
-    .line 142
-    .line 143
-    .line 144
-    :try_start_5
-    const-string/jumbo p0, "mpos_service"
-
-    .line 145
-    .line 146
-    .line 147
-    new-instance v3, Lcom/android/server/SystemServer$4;
-
-    .line 148
-    .line 149
-    const/4 v4, 0x6
-
-    .line 150
-    invoke-direct {v3, v4}, Lcom/android/server/SystemServer$4;-><init>(I)V
-
-    .line 151
-    .line 152
-    .line 153
-    invoke-static {p0, v3}, Landroid/os/ServiceManager;->addService(Ljava/lang/String;Landroid/os/IServiceCreator;)V
-    :try_end_5
-    .catch Ljava/lang/Exception; {:try_start_5 .. :try_end_5} :catch_0
-
-    .line 154
-    .line 155
-    .line 156
-    goto :goto_5
-
-    .line 157
-    :catch_0
-    move-exception p0
-
-    .line 158
-    const-string v3, "MPOS - failed to add MPOS Manager Service "
-
-    .line 159
-    .line 160
-    invoke-static {v1, v3}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 161
-    .line 162
-    .line 163
-    invoke-virtual {p0}, Ljava/lang/Exception;->printStackTrace()V
-
-    .line 164
-    .line 165
-    .line 166
-    :goto_5
-    invoke-virtual {v2}, Landroid/util/TimingsTraceLog;->traceEnd()V
-
+   
     .line 167
     .line 168
     .line 169
