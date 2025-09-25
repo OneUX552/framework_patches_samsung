@@ -241,17 +241,7 @@
     .param p0, "targetSdk"    # I
 
     .line 573
-    const/16 v0, 0x1e
-
-    if-lt p0, v0, :cond_0
-
-    .line 574
-    const/4 v0, 0x2
-
-    return v0
-
-    .line 576
-    :cond_0
+   
     const/4 v0, 0x1
 
     return v0
