@@ -18230,15 +18230,7 @@
     .line 4198
     .line 4199
     .line 4200
-    invoke-static {}, Landroid/os/FactoryTest;->isFactoryBinary()Z
-
-    .line 4201
-    .line 4202
-    .line 4203
-    move-result v3
-
-    .line 4204
-    if-nez v3, :cond_3c
+    goto :cond_3c
 
     .line 4205
     .line 4206
