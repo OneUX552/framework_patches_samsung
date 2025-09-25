@@ -103,7 +103,7 @@
 
     .line 33
     .line 34
-    const/4 p1, 0x0
+    const/4 p1, 0x1
 
     .line 35
     iput-boolean p1, p0, Lcom/samsung/android/security/keystore/AttestParameterSpec;->mDevicePropertiesAttestationIncluded:Z
